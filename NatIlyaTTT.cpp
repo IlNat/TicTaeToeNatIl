@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include "TTT_lib.h"
 using std::cout;
-void print(const char board[3][3]);
 
 int main()
 {
@@ -9,7 +8,7 @@ int main()
 
     while (!is_game_over()) {
         print();
-        get_coords();
+        make_next_move();
     }
     print();
 }
